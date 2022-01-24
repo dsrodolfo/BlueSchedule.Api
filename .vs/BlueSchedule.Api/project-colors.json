@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "1b5f20a5-7930-4a30-801d-58cb19cd0126": {
+      "ProjectGuid": "1b5f20a5-7930-4a30-801d-58cb19cd0126",
+      "DisplayName": "BlueSchedule.Api",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
