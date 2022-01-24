@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "BlueSchedule.Api/1.0.0": {
         "dependencies": {
+          "BlueSchedule.Application": "1.0.0",
           "MediatR": "10.0.1",
           "MediatR.Extensions.Microsoft.DependencyInjection": "10.0.1",
           "Swashbuckle.AspNetCore": "6.2.3"
@@ -94,6 +95,15 @@
             "fileVersion": "6.2.3.0"
           }
         }
+      },
+      "BlueSchedule.Application/1.0.0": {
+        "dependencies": {
+          "MediatR": "10.0.1",
+          "MediatR.Extensions.Microsoft.DependencyInjection": "10.0.1"
+        },
+        "runtime": {
+          "BlueSchedule.Application.dll": {}
+        }
       }
     }
   },
@@ -172,6 +182,11 @@
       "sha512": "sha512-bCRI87uKJVb4G+KURWm8LQrL64St04dEFZcF6gIM67Zc0Sr/N47EO83ybLMYOvfNdO1DCv8xwPcrz9J/VEhQ5g==",
       "path": "swashbuckle.aspnetcore.swaggerui/6.2.3",
       "hashPath": "swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+    },
+    "BlueSchedule.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

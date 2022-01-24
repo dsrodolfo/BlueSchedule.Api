@@ -58,3 +58,5 @@ C:\Users\Rodolfo\Desktop\PersonalProjects\BlueSchedule.Api\BlueSchedule.Api\obj\
 C:\Users\Rodolfo\Desktop\PersonalProjects\BlueSchedule.Api\BlueSchedule.Api\obj\Debug\net6.0\ref\BlueSchedule.Api.dll
 C:\Users\Rodolfo\Desktop\PersonalProjects\BlueSchedule.Api\BlueSchedule.Api\obj\Debug\net6.0\BlueSchedule.Api.pdb
 C:\Users\Rodolfo\Desktop\PersonalProjects\BlueSchedule.Api\BlueSchedule.Api\obj\Debug\net6.0\BlueSchedule.Api.genruntimeconfig.cache
+C:\Users\Rodolfo\Desktop\PersonalProjects\BlueSchedule.Api\BlueSchedule.Api\bin\Debug\net6.0\BlueSchedule.Application.dll
+C:\Users\Rodolfo\Desktop\PersonalProjects\BlueSchedule.Api\BlueSchedule.Api\bin\Debug\net6.0\BlueSchedule.Application.pdb

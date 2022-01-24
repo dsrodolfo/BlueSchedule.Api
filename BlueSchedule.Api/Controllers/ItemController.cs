@@ -1,6 +1,6 @@
-﻿using BlueSchedule.Api.CQRS.Commands;
-using BlueSchedule.Api.CQRS.Queries;
-using BlueSchedule.Api.Models;
+﻿using BlueSchedule.Application.CQRS.Commands;
+using BlueSchedule.Application.CQRS.Queries;
+using BlueSchedule.Application.Models;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -19,21 +19,25 @@ namespace BlueSchedule.Api.Controllers
 
         [HttpPost]
         [Route("Insert")]
+        [ProducesResponseType(StatusCodes.Status201Created)]
         public async Task<IActionResult> Insert([FromBody] CreateItemCommand command)
         {
             var response = await _mediator.Send(command);
 
-            return Ok(response);
+            return CreatedAtAction(nameof(GetById), new { Id = response }, command);
         }
 
         [HttpGet]
         [Route("getAll")]
         [ProducesResponseType(typeof(IEnumerable<ItemModel>), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> GetAll()
         {
-            var response = await _mediator.Send(new GetAllItensQuery());
+            var query = new GetAllItensQuery();
+            var response = await _mediator.Send(query);
+            IActionResult result = response.Any() ? Ok(response) : NotFound();
 
-            return Ok(response);
+            return result;
         }
 
         [HttpGet]
@@ -42,7 +46,8 @@ namespace BlueSchedule.Api.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> GetById(Guid id)
         {
-            var response = await _mediator.Send(new GetItemByIdQuery(id));
+            var query = new GetItemByIdQuery(id);
+            var response = await _mediator.Send(query);
             IActionResult result = response != null ? Ok(response) : NotFound();
 
             return result;
@@ -66,7 +71,8 @@ namespace BlueSchedule.Api.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> Delete(Guid id)
         {
-            var response = await _mediator.Send(new DeleteItemCommand { Id = id });
+            var command = new DeleteItemCommand(id);
+            var response = await _mediator.Send(command);
             IActionResult result = response != 0? NoContent() : NotFound();
 
             return result;

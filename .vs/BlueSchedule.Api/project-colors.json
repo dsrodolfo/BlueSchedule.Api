@@ -5,7 +5,22 @@
       "ProjectGuid": "1b5f20a5-7930-4a30-801d-58cb19cd0126",
       "DisplayName": "BlueSchedule.Api",
       "ColorIndex": 0
+    },
+    "aec6f9f4-f3e8-4191-ad1d-c2b29f26f0e7": {
+      "ProjectGuid": "aec6f9f4-f3e8-4191-ad1d-c2b29f26f0e7",
+      "DisplayName": "BlueSchedule.Application",
+      "ColorIndex": 1
+    },
+    "de736d54-f6c6-47dc-b475-74777eccd183": {
+      "ProjectGuid": "de736d54-f6c6-47dc-b475-74777eccd183",
+      "DisplayName": "BlueSchedule.Domain",
+      "ColorIndex": 2
+    },
+    "6584b733-47bf-4217-879f-d4a3150a9b0b": {
+      "ProjectGuid": "6584b733-47bf-4217-879f-d4a3150a9b0b",
+      "DisplayName": "BlueSchedule.Infrastructure",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 4
 }

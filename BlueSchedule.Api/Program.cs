@@ -7,7 +7,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddMediatR(Assembly.GetExecutingAssembly());
+var applicationAssembly = Assembly.Load("BlueSchedule.Application");
+builder.Services.AddMediatR(applicationAssembly);
 
 var app = builder.Build();
 

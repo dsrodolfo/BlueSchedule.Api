@@ -118,6 +118,20 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "BlueSchedule.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "MediatR": "10.0.1",
+          "MediatR.Extensions.Microsoft.DependencyInjection": "10.0.1"
+        },
+        "compile": {
+          "bin/placeholder/BlueSchedule.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BlueSchedule.Application.dll": {}
+        }
       }
     }
   },
@@ -314,10 +328,16 @@
         "swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "BlueSchedule.Application/1.0.0": {
+      "type": "project",
+      "path": "../BlueSchedule.Application/BlueSchedule.Application.csproj",
+      "msbuildProject": "../BlueSchedule.Application/BlueSchedule.Application.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "BlueSchedule.Application >= 1.0.0",
       "MediatR >= 10.0.1",
       "MediatR.Extensions.Microsoft.DependencyInjection >= 10.0.1",
       "Swashbuckle.AspNetCore >= 6.2.3"
@@ -353,7 +373,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Rodolfo\\Desktop\\PersonalProjects\\BlueSchedule.Api\\BlueSchedule.Application\\BlueSchedule.Application.csproj": {
+              "projectPath": "C:\\Users\\Rodolfo\\Desktop\\PersonalProjects\\BlueSchedule.Api\\BlueSchedule.Application\\BlueSchedule.Application.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
