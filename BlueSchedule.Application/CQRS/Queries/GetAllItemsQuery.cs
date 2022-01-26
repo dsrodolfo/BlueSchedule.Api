@@ -3,7 +3,7 @@ using MediatR;
 
 namespace BlueSchedule.Application.CQRS.Queries
 {
-    public class GetAllItensQuery : IRequest<IEnumerable<ItemModel>>
+    public class GetAllItemsQuery : IRequest<IEnumerable<ItemModel>>
     {
 
     }

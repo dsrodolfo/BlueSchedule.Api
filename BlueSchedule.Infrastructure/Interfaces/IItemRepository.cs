@@ -4,6 +4,7 @@ namespace BlueSchedule.Infrastructure.Interfaces
 {
     public interface IItemRepository
     {
-        IEnumerable<ItemEntity> GetAllItens();
+        IEnumerable<ItemEntity> GetAllItems();
+        ItemEntity? GetItemById(Guid id);
     }
 }

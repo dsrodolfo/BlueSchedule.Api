@@ -6,14 +6,13 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerServices()
+                .AddMediatRServices()            
+                .AddRepositoryServices()
+                .AddAutoMapperServices();
 
 var connectionString = builder.Configuration.GetSection("DbContextSettings")["ConnectionString"];
 builder.Services.AddDbContext<BlueScheduleDbContext>(options => options.UseNpgsql(connectionString));
-
-builder.Services.AddMediatRServices()
-                .AddRepositoryServices()
-                .AddAutoMapperServices();
 
 var app = builder.Build();
 
@@ -24,7 +23,5 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseAuthorization();
-
 app.MapControllers();
-
 app.Run();

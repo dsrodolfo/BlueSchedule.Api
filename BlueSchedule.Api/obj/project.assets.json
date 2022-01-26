@@ -146,12 +146,10 @@
       "Microsoft.Extensions.ApiDescription.Server/3.0.0": {
         "type": "package",
         "build": {
-          "build/Microsoft.Extensions.ApiDescription.Server.props": {},
-          "build/Microsoft.Extensions.ApiDescription.Server.targets": {}
+          "build/_._": {}
         },
         "buildMultiTargeting": {
-          "buildMultiTargeting/Microsoft.Extensions.ApiDescription.Server.props": {},
-          "buildMultiTargeting/Microsoft.Extensions.ApiDescription.Server.targets": {}
+          "buildMultiTargeting/_._": {}
         }
       },
       "Microsoft.Extensions.Caching.Abstractions/6.0.0": {
@@ -323,7 +321,7 @@
           "Swashbuckle.AspNetCore.SwaggerUI": "6.2.3"
         },
         "build": {
-          "build/Swashbuckle.AspNetCore.props": {}
+          "build/_._": {}
         }
       },
       "Swashbuckle.AspNetCore.Swagger/6.2.3": {
@@ -414,7 +412,9 @@
           "AutoMapper": "11.0.0",
           "BlueSchedule.Infrastructure": "1.0.0",
           "MediatR": "10.0.1",
-          "MediatR.Extensions.Microsoft.DependencyInjection": "10.0.1"
+          "MediatR.Extensions.Microsoft.DependencyInjection": "10.0.1",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "6.0.1",
+          "Swashbuckle.AspNetCore": "6.2.3"
         },
         "compile": {
           "bin/placeholder/BlueSchedule.Application.dll": {}
@@ -1169,13 +1169,11 @@
     "net6.0": [
       "AutoMapper >= 11.0.0",
       "BlueSchedule.Application >= 1.0.0",
-      "BlueSchedule.Infrastructure >= 1.0.0",
       "MediatR >= 10.0.1",
       "MediatR.Extensions.Microsoft.DependencyInjection >= 10.0.1",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.1",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.1",
-      "Npgsql.EntityFrameworkCore.PostgreSQL >= 6.0.1",
-      "Swashbuckle.AspNetCore >= 6.2.3"
+      "Npgsql.EntityFrameworkCore.PostgreSQL >= 6.0.1"
     ]
   },
   "packageFolders": {
@@ -1211,9 +1209,6 @@
           "projectReferences": {
             "C:\\Users\\Rodolfo\\Desktop\\PersonalProjects\\BlueSchedule.Api\\BlueSchedule.Application\\BlueSchedule.Application.csproj": {
               "projectPath": "C:\\Users\\Rodolfo\\Desktop\\PersonalProjects\\BlueSchedule.Api\\BlueSchedule.Application\\BlueSchedule.Application.csproj"
-            },
-            "C:\\Users\\Rodolfo\\Desktop\\PersonalProjects\\BlueSchedule.Api\\BlueSchedule.Infrastructure\\BlueSchedule.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\Rodolfo\\Desktop\\PersonalProjects\\BlueSchedule.Api\\BlueSchedule.Infrastructure\\BlueSchedule.Infrastructure.csproj"
             }
           }
         }
@@ -1255,10 +1250,6 @@
           "Npgsql.EntityFrameworkCore.PostgreSQL": {
             "target": "Package",
             "version": "[6.0.1, )"
-          },
-          "Swashbuckle.AspNetCore": {
-            "target": "Package",
-            "version": "[6.2.3, )"
           }
         },
         "imports": [

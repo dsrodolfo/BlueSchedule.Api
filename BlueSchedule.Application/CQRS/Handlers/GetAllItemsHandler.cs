@@ -6,20 +6,20 @@ using MediatR;
 
 namespace BlueSchedule.Application.Handlers
 {
-    public class GetAllItensHandler : IRequestHandler<GetAllItensQuery, IEnumerable<ItemModel>>
+    public class GetAllItemsHandler : IRequestHandler<GetAllItemsQuery, IEnumerable<ItemModel>>
     {
         private readonly IMapper _mapper;
         private readonly IItemRepository _itemRepository;
 
-        public GetAllItensHandler(IMapper mapper, IItemRepository itemRepository)
+        public GetAllItemsHandler(IMapper mapper, IItemRepository itemRepository)
         {
             _mapper = mapper;
             _itemRepository = itemRepository;
         }
 
-        public Task<IEnumerable<ItemModel>> Handle(GetAllItensQuery query, CancellationToken cancellationToken)
+        public Task<IEnumerable<ItemModel>> Handle(GetAllItemsQuery query, CancellationToken cancellationToken)
         {
-            var itemEntities = _itemRepository.GetAllItens();
+            var itemEntities = _itemRepository.GetAllItems();
             var response = _mapper.Map<IEnumerable<ItemModel>>(itemEntities);
 
             return Task.FromResult(response);

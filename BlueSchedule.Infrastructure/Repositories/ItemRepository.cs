@@ -13,9 +13,14 @@ namespace BlueSchedule.Infrastructure.Repositories
             _context = context;
         }
 
-        public IEnumerable<ItemEntity> GetAllItens()
+        public IEnumerable<ItemEntity> GetAllItems()
         {
             return _context.Item;
+        }
+
+        public ItemEntity? GetItemById(Guid id)
+        {
+            return _context.Item.Where(x => x.Id == id).FirstOrDefault();
         }
     }
 }

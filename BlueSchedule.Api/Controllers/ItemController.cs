@@ -33,9 +33,11 @@ namespace BlueSchedule.Api.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> GetAll()
         {
-            var query = new GetAllItensQuery();
+            var query = new GetAllItemsQuery();
             var response = await _mediator.Send(query);
-            IActionResult result = response.Any() ? Ok(response) : NotFound();
+            IActionResult result = response.Any() ? 
+                Ok(response) : 
+                NotFound("No items were found.");
 
             return result;
         }
@@ -48,7 +50,9 @@ namespace BlueSchedule.Api.Controllers
         {
             var query = new GetItemByIdQuery(id);
             var response = await _mediator.Send(query);
-            IActionResult result = response != null ? Ok(response) : NotFound();
+            IActionResult result = response != null ? 
+                Ok(response) : 
+                NotFound(new GenericModel("Item not found."));
 
             return result;
         }

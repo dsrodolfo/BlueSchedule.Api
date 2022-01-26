@@ -1,24 +1,28 @@
-﻿using BlueSchedule.Application.CQRS.Queries;
+﻿using AutoMapper;
+using BlueSchedule.Application.CQRS.Queries;
 using BlueSchedule.Application.Models;
+using BlueSchedule.Infrastructure.Interfaces;
 using MediatR;
 
 namespace BlueSchedule.Application.Handlers
 {
     public class GetItemByIdHandler : IRequestHandler<GetItemByIdQuery, ItemModel>
     {
+        private readonly IMapper _mapper;
+        private readonly IItemRepository _itemRepository;
+
+        public GetItemByIdHandler(IMapper mapper, IItemRepository itemRepository)
+        {
+            _mapper = mapper;
+            _itemRepository = itemRepository;
+        }
+
         public Task<ItemModel> Handle(GetItemByIdQuery query, CancellationToken cancellationToken)
         {
-            var item = new ItemModel
-            {
-                Id = Guid.NewGuid(),
-                Title = "Test YYYYYYYYYYYYY",
-                Description = @"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-                Responsible = "Rodolfo",
-                StartDate = DateTime.Now,
-                EndDate = DateTime.Now.AddDays(7)
-            };
+            var itemEntity = _itemRepository.GetItemById(query.Id);
+            var response = _mapper.Map<ItemModel>(itemEntity);
 
-            return Task.FromResult(item);
+            return Task.FromResult(response);
         }
     }
 }
