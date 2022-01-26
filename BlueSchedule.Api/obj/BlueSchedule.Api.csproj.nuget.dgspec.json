@@ -33,6 +33,9 @@
             "projectReferences": {
               "C:\\Users\\Rodolfo\\Desktop\\PersonalProjects\\BlueSchedule.Api\\BlueSchedule.Application\\BlueSchedule.Application.csproj": {
                 "projectPath": "C:\\Users\\Rodolfo\\Desktop\\PersonalProjects\\BlueSchedule.Api\\BlueSchedule.Application\\BlueSchedule.Application.csproj"
+              },
+              "C:\\Users\\Rodolfo\\Desktop\\PersonalProjects\\BlueSchedule.Api\\BlueSchedule.Infrastructure\\BlueSchedule.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Rodolfo\\Desktop\\PersonalProjects\\BlueSchedule.Api\\BlueSchedule.Infrastructure\\BlueSchedule.Infrastructure.csproj"
               }
             }
           }
@@ -47,6 +50,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
             "MediatR": {
               "target": "Package",
               "version": "[10.0.1, )"
@@ -54,6 +61,22 @@
             "MediatR.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[10.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[6.0.1, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -108,7 +131,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Rodolfo\\Desktop\\PersonalProjects\\BlueSchedule.Api\\BlueSchedule.Infrastructure\\BlueSchedule.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Rodolfo\\Desktop\\PersonalProjects\\BlueSchedule.Api\\BlueSchedule.Infrastructure\\BlueSchedule.Infrastructure.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -121,6 +148,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
             "MediatR": {
               "target": "Package",
               "version": "[10.0.1, )"
@@ -128,6 +159,142 @@
             "MediatR.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[10.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Rodolfo\\Desktop\\PersonalProjects\\BlueSchedule.Api\\BlueSchedule.Domain\\BlueSchedule.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Rodolfo\\Desktop\\PersonalProjects\\BlueSchedule.Api\\BlueSchedule.Domain\\BlueSchedule.Domain.csproj",
+        "projectName": "BlueSchedule.Domain",
+        "projectPath": "C:\\Users\\Rodolfo\\Desktop\\PersonalProjects\\BlueSchedule.Api\\BlueSchedule.Domain\\BlueSchedule.Domain.csproj",
+        "packagesPath": "C:\\Users\\Rodolfo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Rodolfo\\Desktop\\PersonalProjects\\BlueSchedule.Api\\BlueSchedule.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Rodolfo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "http://nuget.signa.net.br/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Rodolfo\\Desktop\\PersonalProjects\\BlueSchedule.Api\\BlueSchedule.Infrastructure\\BlueSchedule.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Rodolfo\\Desktop\\PersonalProjects\\BlueSchedule.Api\\BlueSchedule.Infrastructure\\BlueSchedule.Infrastructure.csproj",
+        "projectName": "BlueSchedule.Infrastructure",
+        "projectPath": "C:\\Users\\Rodolfo\\Desktop\\PersonalProjects\\BlueSchedule.Api\\BlueSchedule.Infrastructure\\BlueSchedule.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Rodolfo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Rodolfo\\Desktop\\PersonalProjects\\BlueSchedule.Api\\BlueSchedule.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Rodolfo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "http://nuget.signa.net.br/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Rodolfo\\Desktop\\PersonalProjects\\BlueSchedule.Api\\BlueSchedule.Domain\\BlueSchedule.Domain.csproj": {
+                "projectPath": "C:\\Users\\Rodolfo\\Desktop\\PersonalProjects\\BlueSchedule.Api\\BlueSchedule.Domain\\BlueSchedule.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[6.0.1, )"
             }
           },
           "imports": [

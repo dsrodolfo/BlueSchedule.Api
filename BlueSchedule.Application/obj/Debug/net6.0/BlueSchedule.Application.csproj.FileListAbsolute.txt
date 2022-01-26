@@ -10,3 +10,8 @@ C:\Users\Rodolfo\Desktop\PersonalProjects\BlueSchedule.Api\BlueSchedule.Applicat
 C:\Users\Rodolfo\Desktop\PersonalProjects\BlueSchedule.Api\BlueSchedule.Application\obj\Debug\net6.0\BlueSchedule.Application.dll
 C:\Users\Rodolfo\Desktop\PersonalProjects\BlueSchedule.Api\BlueSchedule.Application\obj\Debug\net6.0\ref\BlueSchedule.Application.dll
 C:\Users\Rodolfo\Desktop\PersonalProjects\BlueSchedule.Api\BlueSchedule.Application\obj\Debug\net6.0\BlueSchedule.Application.pdb
+C:\Users\Rodolfo\Desktop\PersonalProjects\BlueSchedule.Api\BlueSchedule.Application\bin\Debug\net6.0\BlueSchedule.Domain.dll
+C:\Users\Rodolfo\Desktop\PersonalProjects\BlueSchedule.Api\BlueSchedule.Application\bin\Debug\net6.0\BlueSchedule.Infrastructure.dll
+C:\Users\Rodolfo\Desktop\PersonalProjects\BlueSchedule.Api\BlueSchedule.Application\bin\Debug\net6.0\BlueSchedule.Infrastructure.pdb
+C:\Users\Rodolfo\Desktop\PersonalProjects\BlueSchedule.Api\BlueSchedule.Application\bin\Debug\net6.0\BlueSchedule.Domain.pdb
+C:\Users\Rodolfo\Desktop\PersonalProjects\BlueSchedule.Api\BlueSchedule.Application\obj\Debug\net6.0\BlueSchedule.Application.csproj.CopyComplete

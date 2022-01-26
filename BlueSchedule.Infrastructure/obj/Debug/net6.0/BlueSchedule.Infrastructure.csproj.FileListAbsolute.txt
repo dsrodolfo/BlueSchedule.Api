@@ -1,0 +1,17 @@
+C:\Users\Rodolfo\Desktop\PersonalProjects\BlueSchedule.Api\BlueSchedule.Infrastructure\bin\Debug\net6.0\BlueSchedule.Infrastructure.deps.json
+C:\Users\Rodolfo\Desktop\PersonalProjects\BlueSchedule.Api\BlueSchedule.Infrastructure\bin\Debug\net6.0\BlueSchedule.Infrastructure.runtimeconfig.json
+C:\Users\Rodolfo\Desktop\PersonalProjects\BlueSchedule.Api\BlueSchedule.Infrastructure\bin\Debug\net6.0\BlueSchedule.Infrastructure.dll
+C:\Users\Rodolfo\Desktop\PersonalProjects\BlueSchedule.Api\BlueSchedule.Infrastructure\bin\Debug\net6.0\ref\BlueSchedule.Infrastructure.dll
+C:\Users\Rodolfo\Desktop\PersonalProjects\BlueSchedule.Api\BlueSchedule.Infrastructure\bin\Debug\net6.0\BlueSchedule.Infrastructure.pdb
+C:\Users\Rodolfo\Desktop\PersonalProjects\BlueSchedule.Api\BlueSchedule.Infrastructure\bin\Debug\net6.0\BlueSchedule.Domain.dll
+C:\Users\Rodolfo\Desktop\PersonalProjects\BlueSchedule.Api\BlueSchedule.Infrastructure\bin\Debug\net6.0\BlueSchedule.Domain.pdb
+C:\Users\Rodolfo\Desktop\PersonalProjects\BlueSchedule.Api\BlueSchedule.Infrastructure\obj\Debug\net6.0\BlueSchedule.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Rodolfo\Desktop\PersonalProjects\BlueSchedule.Api\BlueSchedule.Infrastructure\obj\Debug\net6.0\BlueSchedule.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rodolfo\Desktop\PersonalProjects\BlueSchedule.Api\BlueSchedule.Infrastructure\obj\Debug\net6.0\BlueSchedule.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Rodolfo\Desktop\PersonalProjects\BlueSchedule.Api\BlueSchedule.Infrastructure\obj\Debug\net6.0\BlueSchedule.Infrastructure.AssemblyInfo.cs
+C:\Users\Rodolfo\Desktop\PersonalProjects\BlueSchedule.Api\BlueSchedule.Infrastructure\obj\Debug\net6.0\BlueSchedule.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Rodolfo\Desktop\PersonalProjects\BlueSchedule.Api\BlueSchedule.Infrastructure\obj\Debug\net6.0\BlueSchedule.Infrastructure.csproj.CopyComplete
+C:\Users\Rodolfo\Desktop\PersonalProjects\BlueSchedule.Api\BlueSchedule.Infrastructure\obj\Debug\net6.0\BlueSchedule.Infrastructure.dll
+C:\Users\Rodolfo\Desktop\PersonalProjects\BlueSchedule.Api\BlueSchedule.Infrastructure\obj\Debug\net6.0\ref\BlueSchedule.Infrastructure.dll
+C:\Users\Rodolfo\Desktop\PersonalProjects\BlueSchedule.Api\BlueSchedule.Infrastructure\obj\Debug\net6.0\BlueSchedule.Infrastructure.pdb
+C:\Users\Rodolfo\Desktop\PersonalProjects\BlueSchedule.Api\BlueSchedule.Infrastructure\obj\Debug\net6.0\BlueSchedule.Infrastructure.genruntimeconfig.cache

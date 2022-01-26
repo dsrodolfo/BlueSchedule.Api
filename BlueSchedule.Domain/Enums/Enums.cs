@@ -1,6 +1,6 @@
 ﻿namespace BlueSchedule.Domain.Enums
 {
-    public enum CardPriority
+    public enum ItemPriority
     {
         Critical = 1,
         Highest = 2,

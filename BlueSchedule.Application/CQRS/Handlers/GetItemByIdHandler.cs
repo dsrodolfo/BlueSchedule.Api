@@ -11,9 +11,11 @@ namespace BlueSchedule.Application.Handlers
             var item = new ItemModel
             {
                 Id = Guid.NewGuid(),
-                Title = "Teste XX",
-                Date = DateTime.Now,
-                IsFinished = false
+                Title = "Test YYYYYYYYYYYYY",
+                Description = @"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+                Responsible = "Rodolfo",
+                StartDate = DateTime.Now,
+                EndDate = DateTime.Now.AddDays(7)
             };
 
             return Task.FromResult(item);
